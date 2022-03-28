@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>one-rep-max-calculater</title>
+</head>
+<body>
+    <div class="navbar">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            </button>  
+          </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <h1>Calculate your one rep max!</h1>
+            <h2>Wonder how much you can max rep? You can now find the anwser, calculate your one rep max by inputting, how much weight you do for your max reps (until faliure).</h2>
+            <h3>You can calculate in both lbs or kg</h3>
+        </div>
+        <div class="calculater">
+            <h1>Calculate</h1>
+            <p>Weight</p>
+            <input type="text" name="weight" value="" placeholder="Weight..." required id="weight">
+            <p>Reps</p>
+            <input type="text" name="reps" value="" placeholder="Reps..." required id="reps">
+            <button type="submit" id="btn" onclick="handleCalculation()"><span>Calculate!</span></button>
+        </div>
+        <div id="calculated">
+            <p id="max-rep"></p>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

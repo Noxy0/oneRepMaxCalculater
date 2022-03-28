@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background: linear-gradient(45deg, rgb(115, 40, 255) 50%, rgb(68, 0, 255));
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ddd;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #111;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  color: #333;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  color: #111;
+  padding: 10px 15px;
+  border: none;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+.line1 {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 5px;
+}
+
+.line2 {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 5px;
+}
+
+.line3 {
+  content: "";
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 5px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.header {
+  color: #111;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.calculater {
+  background: linear-gradient(45deg, rgb(115, 40, 255) 50%, rgb(68, 0, 255));
+  padding: 50px 100px;
+  border-radius: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.calculater input {
+  border: none;
+  padding: 10px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.calculater p {
+  font-size: 20px;
+}
+
+#btn {
+  margin-top: 35px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  color: #eee;
+  transition: all 0.3s;
+}
+
+#btn:hover {
+  letter-spacing: 2px;
+}
+
+#calculated {
+  background: linear-gradient(45deg, rgb(115, 40, 255) 50%, rgb(68, 0, 255));
+  margin-top: 20px;
+  width: 420px;
+  display: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+#calculated:hover {
+  transform: scale(1.1);
+}
